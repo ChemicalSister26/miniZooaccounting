@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'Zoo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'MiniZoo',
+        'NAME': 'MiniZoo1',
         'USER': 'MiniZoo',
         'PASSWORD': 'password',
         'HOST': 'localhost',
