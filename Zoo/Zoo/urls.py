@@ -18,9 +18,10 @@ from django.urls import path
 
 from django.views.generic import TemplateView
 
-from Accountings.views import AnimalView
+from Accountings.views import AnimalView, MealView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', AnimalView.as_view())
+    path('index/', AnimalView.as_view()),
+    path('meal/', MealView.as_view()),
 ]

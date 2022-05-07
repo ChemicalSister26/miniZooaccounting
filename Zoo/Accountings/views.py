@@ -5,7 +5,7 @@ from django.urls import path
 
 from django.views.generic import ListView, DetailView
 
-from Accountings.models import Animal
+from Accountings.models import *
 
 
 class AnimalView(ListView):
@@ -13,7 +13,10 @@ class AnimalView(ListView):
     model = Animal
     context_object_name = 'post'
 
-
+class MealView(ListView):
+    template_name = 'Accountings/meal.html'
+    model = Meal
+    context_object_name = 'meal'
 
 
 
